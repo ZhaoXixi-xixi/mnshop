@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="机械设备专用多功能橡胶密封圈套装，245件装，限时特惠50%折扣">
+    <meta name="keywords" content="橡胶密封圈,机械设备,密封件,汽修工具">
+    <title>机械设备专用多功能橡胶密封圈套装 - 限时特惠50%</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    
+    <!-- CSS优化 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* 性能优化的CSS */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f5f5f5;
+            -webkit-font-smoothing: antialiased;
+        }
+        .sticky-header {
+            background: linear-gradient(90deg, #fde047 0%, #facc15 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .product-gallery {
+            background: white;
+            border-radius: 0 0 20px 20px;
+        }
+        .price-section {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        .countdown-box {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-2px);
+        }
+        .order-form {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            border-radius: 20px;
+        }
+        .btn-order {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+            transition: all 0.3s ease;
+        }
+        .btn-order:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.5);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .slide-up {
+            animation: slideUp 0.5s ease-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .gallery-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #d1d5db;
+            transition: all 0.3s ease;
+        }
+        .gallery-dot.active {
+            background: #3b82f6;
+            transform: scale(1.5);
+        }
+        .review-star {
+            color: #fbbf24;
+        }
+        
+        /* 加载优化 */
+        img {
+            loading: lazy;
+        }
+        
+        /* 移动端优化 */
+        @media (max-width: 480px) {
+            .sticky-header {
+                padding: 8px 16px;
+            }
+            .price-section {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- 固定顶部横幅 -->
+    <div class="sticky-header fixed top-0 left-0 right-0 z-50 px-4 py-3">
+        <div class="flex items-center justify-between text-white">
+            <div class="flex-1">
+                <h2 class="text-sm font-bold">限时特惠 50% 折扣！</h2>
+            </div>
+            <button class="bg-red-600 text-white px-4 py-2 rounded-full text-xs font-bold pulse-animation" onclick="scrollToOrder()">
+                立即抢购
+            </button>
+            <div class="ml-2">
+                <svg class="w-8 h-8 animate-bounce" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="pt-16">
+        <!-- 产品图片轮播 -->
+        <div class="product-gallery p-4">
+            <div class="relative">
+                <div class="aspect-square bg-gray-200 rounded-lg overflow-hidden">
+                    <img id="mainImage" src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=400&fit=crop" 
+                         alt="机械设备专用橡胶密封圈套装" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- 图片指示器 -->
+                <div class="flex justify-center mt-4 space-x-2">
+                    <div class="gallery-dot active" onclick="changeImage(0)"></div>
+                    <div class="gallery-dot" onclick="changeImage(1)"></div>
+                    <div class="gallery-dot" onclick="changeImage(2)"></div>
+                    <div class="gallery-dot" onclick="changeImage(3)"></div>
+                </div>
+            </div>
+            
+            <!-- 产品标题 -->
+            <h1 class="text-xl font-bold text-gray-800 mt-4 leading-tight">
+                机械设备专用多功能橡胶密封圈套装 - 245件装
+            </h1>
+        </div>
+
+        <!-- 价格和倒计时区域 -->
+        <div class="px-4 mb-6">
+            <div class="price-section p-6 text-white">
+                <div class="countdown-box p-4 mb-4">
+                    <div class="text-center">
+                        <p class="text-sm text-green-600 font-medium mb-2">限时优惠结束倒计时</p>
+                        <div class="flex justify-center space-x-2" id="countdown">
+                            <div class="text-center">
+                                <div class="bg-blue-600 text-white px-3 py-2 rounded font-bold text-lg" id="days">00</div>
+                                <div class="text-xs text-blue-600 mt-1">天</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-blue-600 text-white px-3 py-2 rounded font-bold text-lg" id="hours">12</div>
+                                <div class="text-xs text-blue-600 mt-1">时</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-blue-600 text-white px-3 py-2 rounded font-bold text-lg" id="minutes">34</div>
+                                <div class="text-xs text-blue-600 mt-1">分</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-blue-600 text-white px-3 py-2 rounded font-bold text-lg" id="seconds">56</div>
+                                <div class="text-xs text-blue-600 mt-1">秒</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <div class="mb-2">
+                        <span class="text-sm line-through opacity-75">原价: ¥120</span>
+                    </div>
+                    <div class="text-3xl font-bold">
+                        特惠价: ¥59
+                    </div>
+                    <div class="text-sm mt-2 bg-red-600 inline-block px-3 py-1 rounded-full">
+                        已售: 23,669 | 评价: 5039
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 产品特性 -->
+        <div class="px-4 mb-6">
+            <h2 class="text-lg font-bold mb-4 text-center">产品特性</h2>
+            <div class="space-y-4">
+                <div class="feature-card p-4">
+                    <h3 class="font-bold text-gray-800 mb-2">✓ 多功能适用</h3>
+                    <p class="text-sm text-gray-600">适用于机械、摩托车、工业设备等各种机械设备</p>
+                </div>
+                <div class="feature-card p-4">
+                    <h3 class="font-bold text-gray-800 mb-2">✓ 防油防水防气</h3>
+                    <p class="text-sm text-gray-600">可靠防止连接处、螺栓、管道等部位的空气、油、水渗透</p>
+                </div>
+                <div class="feature-card p-4">
+                    <h3 class="font-bold text-gray-800 mb-2">✓ 耐高温高压</h3>
+                    <p class="text-sm text-gray-600">在恶劣环境下，如发动机舱内也能可靠工作</p>
+                </div>
+                <div class="feature-card p-4">
+                    <h3 class="font-bold text-gray-800 mb-2">✓ 持久耐用</h3>
+                    <p class="text-sm text-gray-600">优质橡胶材料，长期使用不变形、不开裂、不老化</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GIF展示区域 -->
+        <div class="px-4 mb-6">
+            <div class="bg-white rounded-lg p-4">
+                <div class="aspect-video bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg flex items-center justify-center">
+                    <div class="text-center">
+                        <svg class="w-16 h-16 mx-auto text-blue-500 mb-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <p class="text-blue-600 font-medium">产品使用演示</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 订购表单 -->
+        <div class="px-4 mb-6" id="orderForm">
+            <div class="order-form p-6 slide-up">
+                <h2 class="text-center text-xl font-bold text-white mb-6">立即订购</h2>
+                
+                <form id="productForm" onsubmit="submitOrder(event)">
+                    <div class="space-y-4">
+                        <div>
+                            <input type="text" name="name" placeholder="收货人姓名" required
+                                   class="w-full p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="tel" name="phone" placeholder="手机号码" required pattern="^1[3-9]\d{9}$"
+                                   class="w-full p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="text" name="address" placeholder="收货地址" required
+                                   class="w-full p-4 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none">
+                        </div>
+                        
+                        <!-- 套餐选择 -->
+                        <div class="space-y-2">
+                            <label class="flex items-center bg-white p-4 rounded-lg border-2 border-gray-200 hover:border-blue-400 cursor-pointer">
+                                <input type="radio" name="package" value="1" class="mr-3" checked>
+                                <span class="flex-1">
+                                    <strong>1套装:</strong> ¥59 + ¥6配送费
+                                </span>
+                            </label>
+                            <label class="flex items-center bg-white p-4 rounded-lg border-2 border-gray-200 hover:border-blue-400 cursor-pointer">
+                                <input type="radio" name="package" value="2" class="mr-3">
+                                <span class="flex-1">
+                                    <strong>2套装:</strong> ¥99 <span class="text-green-600">(免配送费)</span>
+                                </span>
+                            </label>
+                            <label class="flex items-center bg-white p-4 rounded-lg border-2 border-gray-200 hover:border-blue-400 cursor-pointer">
+                                <input type="radio" name="package" value="3" class="mr-3">
+                                <span class="flex-1">
+                                    <strong>3套装:</strong> ¥129 <span class="text-green-600">(免配送费)</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-order w-full text-white py-4 rounded-lg font-bold text-lg mt-6 pulse-animation">
+                        立即订购
+                    </button>
+                </form>
+                
+                <p class="text-center text-white text-sm mt-4 opacity-90">
+                    我们的工作人员将与您联系确认订单详情
+                </p>
+            </div>
+        </div>
+
+        <!-- 产品详情 -->
+        <div class="px-4 mb-6">
+            <div class="bg-yellow-100 rounded-lg p-4">
+                <h2 class="text-lg font-bold mb-4">产品信息</h2>
+                <div class="space-y-2 text-sm">
+                    <p><strong>产品名称:</strong> 多规格橡胶密封圈套装</p>
+                    <p><strong>密封圈规格:</strong> 6mm / 8mm / 10mm / 12mm / 14mm / 16mm / 18mm / 20mm / 22mm / 24mm / 27mm / 30mm</p>
+                    <p><strong>套装总数量:</strong> 245个</p>
+                    <p><strong>颜色:</strong> 红色、蓝色、黑色</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 用户评价 -->
+        <div class="px-4 mb-6">
+            <h2 class="text-lg font-bold mb-4">用户评价</h2>
+            <div class="bg-white rounded-lg p-4 mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="w-10 h-10 bg-pink-300 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold">J</span>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">JENNIFER</p>
+                        <div class="flex">
+                            <span class="review-star">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">
+                    产品和图片完全一致。我买了大套装在修理店试用 - 非常满意。安装后不再漏油漏水。
+                </p>
+                <div class="mt-2 text-xs text-green-600 flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    购买验证
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-4 mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="w-10 h-10 bg-blue-300 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold">B</span>
+                    </div>
+                    <div class="ml-3">
+                        <p class="font-medium">BECKY</p>
+                        <div class="flex">
+                            <span class="review-star">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-600">
+                    密封圈套装规格齐全，分类清晰便于查找。适用于摩托车和家用电器。非常实用！
+                </p>
+                <div class="mt-2 text-xs text-green-600 flex items-center">
+                    <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    购买验证
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部信息 -->
+        <div class="bg-blue-900 text-white p-6">
+            <h2 class="text-center text-2xl font-bold mb-4">GLOBAL STORE</h2>
+            <div class="space-y-3 text-sm">
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    <span><strong>邮箱:</strong> support@globalstore.com</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <span>退货和配送政策</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 2 2h8c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H6V4h8v16z"/>
+                    </svg>
+                    <span>使用条款</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                    </svg>
+                    <span>隐私政策</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.2c.27-.28.35-.67.24-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+                    </svg>
+                    <span>联系我们</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 图片轮播功能
+        const images = [
+            'https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=400&fit=crop',
+            'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=400&fit=crop',
+            'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop',
+            'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=400&h=400&fit=crop'
+        ];
+
+        function changeImage(index) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = images[index];
+            
+            // 更新指示器
+            const dots = document.querySelectorAll('.gallery-dot');
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // 自动轮播
+        let currentIndex = 0;
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            changeImage(currentIndex);
+        }, 4000);
+
+        // 倒计时功能
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const countDownDate = now + (12 * 60 * 60 * 1000) + (34 * 60 * 1000) + (56 * 1000);
+            
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+                
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById('countdown').innerHTML = '<div class="text-red-600 font-bold">促销已结束</div>';
+                    return;
+                }
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            }, 1000);
+        }
+
+        // 滚动到订单表单
+        function scrollToOrder() {
+            document.getElementById('orderForm').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
+        // 订单提交
+        function submitOrder(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // 简单验证
+            if (!data.name || !data.phone || !data.address) {
+                alert('请填写完整信息');
+                return;
+            }
+            
+            // 手机号验证
+            if (!/^1[3-9]\d{9}$/.test(data.phone)) {
+                alert('请输入正确的手机号码');
+                return;
+            }
+            
+            // 模拟订单提交成功
+            alert(`订单提交成功！\n\n收货人：${data.name}\n手机：${data.phone}\n地址：${data.address}\n套餐：${data.package}套装\n\n我们将在24小时内联系您确认订单！`);
+            
+            // 重置表单
+            event.target.reset();
+            
+            // 恢复第一个套餐的选中状态
+            document.querySelector('input[name="package"]').checked = true;
+            updatePackageSelection();
+        }
+
+        // 表单验证和样式更新
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = document.querySelectorAll('input[type="text"], input[type="tel"]');
+            inputs.forEach(input => {
+                input.addEventListener('blur', function() {
+                    if (this.value.trim() === '') {
+                        this.classList.add('border-red-500');
+                        this.classList.remove('border-green-500');
+                    } else {
+                        this.classList.remove('border-red-500');
+                        this.classList.add('border-green-500');
+                    }
+                });
+            });
+
+            // 套餐选择事件
+            const packageRadios = document.querySelectorAll('input[name="package"]');
+            packageRadios.forEach(radio => {
+                radio.addEventListener('change', updatePackageSelection);
+            });
+
+            // 初始化
+            updatePackageSelection();
+            updateCountdown();
+        });
+
+        // 更新套餐选择样式
+        function updatePackageSelection() {
+            const labels = document.querySelectorAll('label');
+            const checkedRadio = document.querySelector('input[name="package"]:checked');
+            
+            labels.forEach(label => {
+                label.classList.remove('border-blue-500', 'bg-blue-50');
+            });
+            
+            if (checkedRadio) {
+                checkedRadio.closest('label').classList.add('border-blue-500', 'bg-blue-50');
+            }
+        }
+
+        // 性能优化：图片预加载
+        function preloadImages() {
+            images.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+
+        // 页面加载完成后预加载图片
+        window.addEventListener('load', preloadImages);
+
+        // Google Analytics 或其他分析代码可以在这里添加
+        // gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- 可选：添加结构化数据用于SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "机械设备专用多功能橡胶密封圈套装",
+        "description": "245件装橡胶密封圈套装，适用于机械、摩托车、工业设备",
+        "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=400&fit=crop",
+        "brand": {
+            "@type": "Brand",
+            "name": "Global Store"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "59",
+            "priceCurrency": "CNY",
+            "availability": "https://schema.org/InStock",
+            "url": "https://your-domain.vercel.app"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "5039"
+        }
+    }
+    </script>
+</body>
+</html>
